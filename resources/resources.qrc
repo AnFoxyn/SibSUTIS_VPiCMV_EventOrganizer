@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>helpInformation/index.html</file>
+        <file>icons/favicon.ico</file>
+        <file>helpInformation/pages/add.html</file>
+        <file>helpInformation/pages/edit.html</file>
+        <file>helpInformation/pages/hotKeys.html</file>
+        <file>helpInformation/pages/delete.html</file>
+        <file>helpInformation/pages/save.html</file>
+        <file>icons/calendar-minus.png</file>
+        <file>icons/calendar-pen.png</file>
+        <file>icons/calendar-plus.png</file>
+        <file>icons/floppy-disk.png</file>
+        <file>icons/right-from-bracket.png</file>
+        <file>icons/address-card.png</file>
+        <file>icons/circle-info.png</file>
+        <file>icons/gear.png</file>
+        <file>styles/dark.qss</file>
+        <file>styles/light.qss</file>
+    </qresource>
+</RCC>

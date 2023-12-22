@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Event Organizer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/resources.qrc">
+    <normaloff>:/icons/favicon.ico</normaloff>:/icons/favicon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout" columnstretch="25,75">
+    <property name="leftMargin">
+     <number>24</number>
+    </property>
+    <property name="topMargin">
+     <number>24</number>
+    </property>
+    <property name="rightMargin">
+     <number>24</number>
+    </property>
+    <property name="bottomMargin">
+     <number>24</number>
+    </property>
+    <property name="spacing">
+     <number>24</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>16</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="addButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>36</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+          <bold>true</bold>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::DefaultContextMenu</enum>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>   Добавить мероприятие</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources/resources.qrc">
+          <normaloff>:/icons/calendar-plus.png</normaloff>:/icons/calendar-plus.png</iconset>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+        <property name="autoRepeatInterval">
+         <number>100</number>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCalendarWidget" name="calendarWidget">
+        <property name="gridVisible">
+         <bool>false</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QCalendarWidget::SingleSelection</enum>
+        </property>
+        <property name="horizontalHeaderFormat">
+         <enum>QCalendarWidget::SingleLetterDayNames</enum>
+        </property>
+        <property name="verticalHeaderFormat">
+         <enum>QCalendarWidget::NoVerticalHeader</enum>
+        </property>
+        <property name="navigationBarVisible">
+         <bool>true</bool>
+        </property>
+        <property name="dateEditEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>16</number>
+      </property>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2" columnstretch="40,20,20,20">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>16</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="dateLabel">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="editButton">
+          <property name="minimumSize">
+           <size>
+            <width>221</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>   Редактировать мероприятие</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources/resources.qrc">
+            <normaloff>:/icons/calendar-pen.png</normaloff>:/icons/calendar-pen.png</iconset>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="deleteButton">
+          <property name="minimumSize">
+           <size>
+            <width>181</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>   Удалить мероприятие</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources/resources.qrc">
+            <normaloff>:/icons/calendar-minus.png</normaloff>:/icons/calendar-minus.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="saveButton">
+          <property name="minimumSize">
+           <size>
+            <width>196</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>   Сохранить мероприятие</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources/resources.qrc">
+            <normaloff>:/icons/floppy-disk.png</normaloff>:/icons/floppy-disk.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>Нет записей с этого дня!</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="tableView">
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="menu_addEvent"/>
+    <addaction name="menu_saveEvent"/>
+    <addaction name="menu_editEvent"/>
+    <addaction name="menu_deleteEvent"/>
+    <addaction name="separator"/>
+    <addaction name="menu_settings"/>
+    <addaction name="separator"/>
+    <addaction name="menu_exit"/>
+   </widget>
+   <widget class="QMenu" name="reference">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="reference_help"/>
+    <addaction name="reference_about"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="reference"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menu_addEvent">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/icons/calendar-plus.png</normaloff>:/icons/calendar-plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить мероприятие</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="menu_editEvent">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/icons/calendar-pen.png</normaloff>:/icons/calendar-pen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Редактировать мероприятие</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="menu_deleteEvent">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/icons/calendar-minus.png</normaloff>:/icons/calendar-minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить мероприятие</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="menu_exit">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/icons/right-from-bracket.png</normaloff>:/icons/right-from-bracket.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="reference_help">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/icons/circle-info.png</normaloff>:/icons/circle-info.png</iconset>
+   </property>
+   <property name="text">
+    <string>Помощь</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="reference_about">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/icons/address-card.png</normaloff>:/icons/address-card.png</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="menu_saveEvent">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/icons/floppy-disk.png</normaloff>:/icons/floppy-disk.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить мероприятие</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="menu_settings">
+   <property name="icon">
+    <iconset resource="resources/resources.qrc">
+     <normaloff>:/icons/gear.png</normaloff>:/icons/gear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
